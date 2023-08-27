@@ -20,6 +20,7 @@ function Notes() {
       navigate("/login");
     }
     //react-hooks/exhaustive-deps
+    // eslint-disable-next-line
   }, []);
 
   const handlemodal = (currentNote) => {

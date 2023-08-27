@@ -21,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "hotel": "concurrently \"npm run start\"  \"nodemon  backend/index.js\""
+    "notebook": "concurrently \"npm run start\"  \"nodemon  Backend/index.js\""
   },
   "eslintConfig": {
     "extends": [
