@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-const mongoURI='mongodb://127.0.0.1:27017/Notebook?directConnection=true';
+const mongoURI='mongodb+srv://kumaramit21470:BaNo6Sxd3viZNpOb@cluster0.4zudpz7.mongodb.net/';
 // const connectToMongo=async ()=>{
 //    await mongoose.connect(mongoURI,()=>{
 //         console.log("Database Connect Successfully....");
