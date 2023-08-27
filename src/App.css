@@ -1,38 +1,346 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Kalam:wght@700&family=Philosopher:wght@700&family=Poppins:wght@500&family=Roboto+Slab:wght@100;700&family=Ubuntu:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.max-width{
+  max-width: 1300px;
+  margin: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar{
+  padding: 8px 0px;
+  background-color:#111;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar .max-width{
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+}
+.navbar .max-width .text{
+  color: #fff;
+  font-family: 'Poppins','san-serif';
+  font-weight: 500;
+}
+.navbar .max-width .btn{
+  font-family: 'Ubuntu','san-serif';
+  font-weight: 500;
+  background-color: blue;
+  color: #fff;
+  border: 2px solid blue;
+  border-radius: 6px;
+  font-size: 15px;
+  padding: 6px 25px;
+  margin: 12px 6px;
+  width: 125px;
+  cursor: pointer;
+}
+.navbar .max-width .btn:hover{
+  background: none;
+}
+.navbar .max-width .logo{
+  display: flex;
+  align-items: baseline;
+}
+.navbar .max-width .menu{
+  margin-left: 15px;
+}
+.navbar .max-width .menu li{
+  display: inline-block;
+  list-style: none;
+}
+.navbar .max-width .menu li a{
+  color: #f4f2f28a;
+  font-size: 17px;
+  padding: 12px 16px;
+  font-weight: bold;
+  font-family: 'Ubuntu','san-serif';
+}
+.navbar .max-width .menu li a:hover{
+  color: #fff;
+}
+.navbar .max-width .menu li a:active{
+  color: #fff;
+}
+/* Same Code Here For All */
+.Success{
+  background-color: rgb(67, 135, 67);
+  color: #fff;
+  padding: 12px 20px;
+}
+.Danger{
+  background-color: rgb(235, 73, 73);
+  color: #fff;
+  padding: 12px 20px;
+}
+/* //home section Styling */
+.home{
+  margin-top: 40px;
+}
+.home .home-content .container{
+  width: 70%;
+  margin: auto;
+}
+.home .home-content .text{
+  margin-bottom: 10px;
+}
+.home .home-content .row{
+  margin-bottom: 15px;
+}
+.home .home-content .row label{
+  font-size: 18px;
+  font-weight: 500;
+}
+.home .home-content input,textarea{
+  display: block;
+  width: 100%;
+  border: 2px solid lightgray;
+  height: 42px;
+  border-radius: 6px;
+  margin: 5px 0px;
+  padding: 0px 16px;
+}
+.home .home-content textarea{
+  height: 50px;
+  padding: 15px 16px;
+  resize: none;
+}
+.home .home-content .btn{
+  font-family: 'Ubuntu','san-serif';
+  font-weight: 500;
+  background-color: blue;
+  color: #fff;
+  border: 2px solid blue;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 6px 10px;
+  margin: 12px 0px;
+  width: 125px;
+  cursor: pointer;
+}
+.home .home-content .btn:hover{
+  background: none;
+  color: blue;
+}
+/* //Alert Section Styling */
+.alert{
+  background-color: #70b470;
+  height: 44px;
+  color: #473737;
+}
+.alert h4{
+ padding: 10px;
+}
+
+/* Login Section Styling */
+.login-box{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* align-items: center; */
+  height: 100vh;
+  min-height: 450px;
+  font-family: 'Poppins','san-serif';
 }
 
-.App-link {
-  color: #61dafb;
+.login-box form{
+  margin-top: 70px;
+  width: 400px;
+  height: 450px;
+  padding: 8px 12px;
+  background-color: transparent;
+  color: #111;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid lightgray;
+}
+.login-box h1{
+  font-size: 29px;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-box .input-box{
+  width: 100%;
+  margin: 8px 0px;
+}
+.login-box .input-box label{
+  font-size: 21px;
+}
+.login-box .input-box input{
+  width: 100%;
+  height: 45px;
+  background-color: lightgray;
+  border-radius: 6px;
+  margin: 12px 0px;
+  padding-left: 10px;
+  /* outline: 2px solid lightgray; */
+  border: none;
+}
+.login-box .input-box a{
+  text-decoration: underline;
+  color: #111;
+}
+.login-box .input-box p{
+  display: inline-block;
+  margin-right: 80px;
+}
+
+.login-box .btn{
+  width: 100%;
+  padding: 12px 0px;
+  font-size: 23px;
+  color: #fff;
+  background-color: blue;
+  border-radius: 6px;
+  margin: 18px 0px;
+  cursor: pointer;
+  border: none;
+}
+/* SignUp Section Styling  */
+.signup-box{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 100vh;
+  min-height: 800px;
+  font-family: 'Poppins','san-serif';
+}
+
+.signup-box form{
+  margin-top: 70px;
+  width: 650px;
+  height: 700px;
+  padding: 8px 12px;
+  background-color: transparent;
+  color: #111;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid lightgray;
+}
+.signup-box h1{
+  font-size: 29px;
+  margin-bottom: 10px;
+}
+
+.signup-box .input-box{
+  width: 100%;
+  margin: 8px 0px;
+}
+.signup-box .input-box label{
+  font-size: 21px;
+}
+.signup-box .input-box input{
+  width: 100%;
+  height: 45px;
+  background-color: lightgray;
+  border-radius: 6px;
+  margin: 12px 0px;
+  padding-left: 10px;
+  /* outline: 2px solid lightgray; */
+  border: none;
+}
+.signup-box .input-box a{
+  text-decoration: underline;
+  color: #111;
+}
+.signup-box .input-box p{
+  display: inline-block;
+  margin-right: 80px;
+}
+
+.signup-box .btn{
+  width: 100%;
+  padding: 12px 0px;
+  font-size: 23px;
+  color: #fff;
+  background-color: blue;
+  border-radius: 6px;
+  margin: 18px 0px;
+  cursor: pointer;
+  border: none;
+}
+/* //Modal Styling  */
+.modal{
+  background-color:#fff;
+  width: 30%;
+  margin: auto;
+  position: absolute;
+  top: -300%;
+  left: 30%;
+  border: 2px solid lightgray;
+  padding: 10px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.modal.active{
+  top:7%;
+}
+.modal .modal-header{
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+.modal .modal-footer{
+  text-align: right;
+  margin-right: 5px;
+}
+.modal .modal-footer .btn{
+  font-family: 'Ubuntu','san-serif';
+  font-weight: 500;
+  background-color: blue;
+  color: #fff;
+  border: 2px solid blue;
+  border-radius: 6px;
+  font-size: 15px;
+  padding: 6px 10px;
+  margin: 12px 0px;
+  width: 114px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.modal .modal-body input{
+  width: 90%;
+  padding: 4px 18px;
+}
+.modal .modal-body label{
+font-size: 18px;
+font-weight: 400;
+}
+/* //notes Section Styling */
+.home .notes .note-content{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+
+.home .notes .note-content .card{
+  width: calc(23%);
+  background-color: #fff;
+  border: 1px solid lightgray;
+  margin: 12px 12px;
+  border-radius: 4px;
+  word-wrap: break-word;
+}
+
+.home .notes .note-content .card .card-body{
+  padding: 1rem 1rem;
+}
+.home .notes .note-content .card .card-body .card-title{
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+.home .notes .note-content .card .card-body .card-text{
+  font-size: 18px;
+}
+.home .notes .note-content .card .card-body i{
+  cursor: pointer;
+  padding: 6px 2px;
+  margin-left: 10px;
 }
