@@ -20,8 +20,8 @@ export default function Navbar() {
                 <li><Link to="/about">About</Link></li>
             </ul>
             </div>
-           {!localStorage.getItem('token')?<div>
-              <Link to='/login' className='btn'>Login</Link>
+           {!localStorage.getItem('token')?<div className='login'>
+              <Link to='/login' className='btn hide'>Login</Link>
               <Link to='/signup' className='btn'>SignUp</Link>
             </div>:<button onClick={handleLogout} className='btn'>Logout</button>}
         </div>

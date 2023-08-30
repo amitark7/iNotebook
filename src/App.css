@@ -324,7 +324,7 @@ font-weight: 400;
   width: calc(23%);
   background-color: #fff;
   border: 1px solid lightgray;
-  margin: 12px 12px;
+  margin: 12px 0px;
   border-radius: 4px;
   word-wrap: break-word;
 }
@@ -343,4 +343,45 @@ font-weight: 400;
   cursor: pointer;
   padding: 6px 2px;
   margin-left: 10px;
+}
+
+@media (max-width:1050px){
+  .home .notes .note-content .card{
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+
+@media (max-width:490px){
+  .max-width{
+    padding: 0px 10px;
+  }
+  .navbar .max-width .menu{
+    display: none;
+  }
+  .login .hide{
+    display: none;
+  }
+  .navbar .max-width .btn{
+    font-size: 12px;
+  }
+  .login-box{
+    padding: 10px;
+  }
+  .login-box .input-box p{
+    margin-right: 10px;
+  }
+  .login-box .input-box{
+    font-size: 15px;
+  }
+  .home .notes .note-content .card{
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .home .notes .note-content .card .card-body .card-title{
+    font-size: 18px;
+  }
+  .home .notes .note-content .card .card-body .card-tex{
+    font-size: 15px;
+  }
 }

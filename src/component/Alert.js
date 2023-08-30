@@ -15,7 +15,7 @@ function Alert(props) {
   return (
     <div style={{height:'50px'}} >
     {props.alert&&<div className={props.alert.type}>
-      <strong>{Capitalize(props.alert.type)} :</strong> {props.alert.msg}</div>}
+      <strong>{Capitalize(props.alert.type)}</strong> {props.alert.msg}</div>}
     </div>
   );
 }
