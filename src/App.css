@@ -384,4 +384,9 @@ font-weight: 400;
   .home .notes .note-content .card .card-body .card-tex{
     font-size: 15px;
   }
+  .modal.active{
+    width: 91%;
+    margin-left: 12px;
+    left: 0%;
+  }
 }

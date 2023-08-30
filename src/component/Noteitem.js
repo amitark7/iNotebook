@@ -15,7 +15,7 @@ function Noteitem(props) {
   return (
     <div className="card">
       <div className="card-body">
-        <div style={{ display: "flex", alignItems: "baseline", width: "100%" }}>
+        <div style={{ display: "flex", alignItems: "baseline", width: "100%",justifyContent:"space-between" }}>
           <h4 className="card-title">{note.title}</h4>
           <i className="fa-solid fa-trash" onClick={handleclick}></i>
           <i className="fa-solid fa-pen-to-square" onClick={()=>{updateNote(note)}}></i>
